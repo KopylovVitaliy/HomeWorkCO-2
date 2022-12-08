@@ -73,13 +73,16 @@ public class Main {
         System.out.println("Задача 4");
 
         int deliveryDistance = 95;
+        int deliveryDay = 1;
 
         if (deliveryDistance < 20) {
-            System.out.println("Потребуется дней: " + 1);
+            System.out.println("Потребуется дней: " + deliveryDay);
         } else if (deliveryDistance > 20 && deliveryDistance < 60) {
-            System.out.println("Потербуется дней: " + 2);
+            deliveryDay++;
+            System.out.println("Потербуется дней: " + deliveryDay);
         } else if (deliveryDistance > 60 && deliveryDistance < 100) {
-            System.out.println("Потребуется дней: " + 3);
+            deliveryDay = deliveryDay+ 2;
+            System.out.println("Потребуется дней: " + deliveryDay);
         } else {
             System.out.println("Доставка не осуществляется.");
         }
